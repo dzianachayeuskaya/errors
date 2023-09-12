@@ -7,6 +7,9 @@ After starting the local server (npm start), the data required to display the li
 ## Details
 
 If the server returned invalid JSON, an information block with the text “An error occurred, try refreshing the page later” is displayed.
+
 If a network error occurs, an information block with the text “An error has occurred, check your Internet connection” is displayed.
+
 If the server returns an empty product list and a 404 response status instead of a product list, a header with the text “Product List is Empty” is displayed.
+
 If the server returns a 500 response status, the request is repeated twice. If the status has not changed after repeated requests, a message is displayed to the user: “An error has occurred, please try refreshing the page later.”
